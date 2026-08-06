@@ -4,7 +4,7 @@ export default defineConfig({
   lang: 'de-AT',
   title: 'Omega Dokumentation',
   description: 'Dokumentation für Omega Module und Erweiterungen',
-  base: '/',
+  base: '/documentation/',
 
   head: [
     ['meta', { name: 'theme-color', content: '#086890' }],

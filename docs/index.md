@@ -2,18 +2,18 @@
 layout: home
 
 hero:
-  name: Omega Solutions
-  text: Dokumentation für Ihre Business-Central-Lösungen
-  tagline: Anleitungen, Einrichtung und Hilfe für Omega Module – zentral, verständlich und aktuell.
+  name: Omega Solutions Software GmbH
+  text: Dokumentation für Business-Central-Lösungen
+  tagline: Anleitungen, Einrichtung und Hilfe für Omega Module
   image:
     src: /Logo.jpg
     alt: Omega Solutions Software GmbH
   actions:
     - theme: brand
       text: Dokumentation öffnen
-      link: /lohn/
+      link: /übersicht/
     - theme: alt
-      text: Kundensupport
+      text: Support
       link: https://www.omegasol.at/kundensupport/
 
 features:
@@ -36,7 +36,3 @@ features:
     title: Laufend aktualisiert
     details: Änderungen an Funktionen und Prozessen können direkt mit den App-Releases dokumentiert werden.
 ---
-
-## Alle Omega Module an einem Ort
-
-Diese Dokumentationsplattform bündelt Anleitungen für die Omega Apps und Erweiterungen. Wählen Sie ein Modul aus, um Installation, Einrichtung und Funktionen kennenzulernen.

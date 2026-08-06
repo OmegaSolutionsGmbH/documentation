@@ -4,11 +4,6 @@ export default defineConfig({
   lang: 'de-AT',
   title: 'Omega Dokumentation',
   description: 'Dokumentation für Omega Module und Erweiterungen',
-
-  // Bei GitHub Pages ohne eigene Domain:
-  // base: '/NAME-DES-REPOSITORIES/',
-  //
-  // Bei docs.omegasol.at:
   base: '/',
 
   head: [
@@ -33,13 +28,19 @@ export default defineConfig({
         text: 'Module',
         items: [
           { text: 'Lohn & Gehalt', link: '/lohn/' },
-          { text: 'Weitere Module', link: '/module/' }
+          { text: 'PDF Versand', link: '/pdf_versand'},
+
         ]
       },
       { text: 'Support', link: 'https://www.omegasol.at/kundensupport/' }
     ],
 
     sidebar: {
+      '/übersicht/':[
+        {
+          text: 'Übersicht',
+        }
+      ],
       '/lohn/': [
         {
           text: 'Lohn & Gehalt',
@@ -49,20 +50,18 @@ export default defineConfig({
             { text: 'Installation', link: '/lohn/installation' },
             { text: 'Einrichtung', link: '/lohn/einrichtung' },
             { text: 'Erste Schritte', link: '/lohn/erste-schritte' },
-            { text: 'Fehlerbehebung', link: '/lohn/fehlerbehebung' }
+            { text: 'Bekannte Fehler', link: '/lohn/bekanntefehler' },
+            { text: 'Lohnarten', link: '/lohn/lohnarten', collapsed: true, 
+              items: [
+                {
+                  text: 'Einrichtung', link: '/lohn/lohnarten/einrichtung',
+                }
+              ]
+            },
           ]
         }
+        
       ],
-
-      '/module/': [
-        {
-          text: 'Omega Module',
-          collapsed: false,
-          items: [
-            { text: 'Übersicht', link: '/module/' }
-          ]
-        }
-      ]
     },
 
     outline: {

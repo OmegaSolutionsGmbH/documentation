@@ -203,7 +203,7 @@ export default defineComponent({
                 </svg>
 
                 <span>
-                  {selectedOption.value.label} herunterladen
+                  Für {selectedOption.value.label} herunterladen
                 </span>
 
                 <svg

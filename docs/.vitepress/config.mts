@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import vueJsx from '@vitejs/plugin-vue-jsx'
+
 
 export default defineConfig({
   lang: 'de-AT',
@@ -6,17 +8,28 @@ export default defineConfig({
   description: 'Dokumentation für Omega Module und Erweiterungen',
   base: '/',
 
+   vite: {
+      plugins: [
+        vueJsx(),
+      ],
+    },
+
   head: [
     ['meta', { name: 'theme-color', content: '#086890' }],
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
 
+  sitemap: {
+    hostname: 'https://docs.omegasol.at/',
+  },
+
   cleanUrls: true,
   lastUpdated: true,
 
+  
+
   themeConfig: {
     siteTitle: false,
-
     logo: {
       src: '/Logo.jpg',
       alt: 'Omega Solutions Software GmbH'
@@ -54,7 +67,7 @@ export default defineConfig({
             { text: 'Lohnarten', link: '/lohn/lohnarten', collapsed: true, 
               items: [
                 {
-                  text: 'Einrichtung', link: '/lohn/lohnarten/einrichtung',
+                  text: 'Lohnarten anlegen', link: '/lohn/lohnarten/lohnartenanlegen',
                 }
               ]
             },
@@ -86,23 +99,36 @@ export default defineConfig({
 
     search: {
       provider: 'local',
+
       options: {
-        translations: {
-          button: {
-            buttonText: 'Dokumentation durchsuchen',
-            buttonAriaLabel: 'Dokumentation durchsuchen'
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: 'Dokumentation durchsuchen',
+                buttonAriaLabel: 'Dokumentation durchsuchen',
+              },
+
+              modal: {
+                displayDetails: 'Details anzeigen',
+                resetButtonTitle: 'Suche zurücksetzen',
+                backButtonTitle: 'Suche schließen',
+                noResultsText: 'Keine Ergebnisse gefunden',
+
+                footer: {
+                  selectText: 'Auswählen',
+                  selectKeyAriaLabel: 'Enter',
+                  navigateText: 'Navigieren',
+                  navigateUpKeyAriaLabel: 'Pfeil nach oben',
+                  navigateDownKeyAriaLabel: 'Pfeil nach unten',
+                  closeText: 'Schließen',
+                  closeKeyAriaLabel: 'Escape',
+                },
+              },
+            },
           },
-          modal: {
-            noResultsText: 'Keine Ergebnisse gefunden',
-            resetButtonTitle: 'Suche zurücksetzen',
-            footer: {
-              selectText: 'Auswählen',
-              navigateText: 'Navigieren',
-              closeText: 'Schließen'
-            }
-          }
-        }
-      }
+        },
+      },
     },
 
     footer: {

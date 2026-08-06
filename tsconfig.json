@@ -6,7 +6,9 @@
     "noEmit": true,
     "skipLibCheck": true,
     "allowJs": true,
-    "types": ["vitepress/client"]
+    "types": ["vitepress/client"],
+    "jsx": "preserve",
+    "jsxImportSource": "vue"
   },
   "include": [
     "docs/**/*.ts",

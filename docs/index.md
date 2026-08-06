@@ -6,33 +6,36 @@ hero:
   text: Dokumentation für Business-Central-Lösungen
   tagline: Anleitungen, Einrichtung und Hilfe für Omega Module
   image:
-    src: /Logo.jpg
+    src: /LogoSmall.png
     alt: Omega Solutions Software GmbH
   actions:
     - theme: brand
       text: Dokumentation öffnen
       link: /übersicht/
     - theme: alt
-      text: Support
-      link: https://www.omegasol.at/kundensupport/
+      text: Downloads
+      link: /Downloads/
 
 features:
-  - icon: 🧭
-    title: Schnell zum Ziel
-    details: Klare Navigationswege und eine zentrale Suche führen direkt zur benötigten Anleitung.
+  - icon: 🧑
+    title: HR Lohn
+    details: Beispiel Text
     link: /lohn/
-    linkText: Modul auswählen
-  - icon: ⚙️
-    title: Schrittweise Einrichtung
-    details: Verständliche Anleitungen für Installation, Konfiguration und tägliche Verwendung.
-    link: /lohn/einrichtung
-    linkText: Einrichtung ansehen
-  - icon: 🛟
-    title: Hilfe bei Problemen
-    details: Häufige Ursachen, konkrete Lösungen und Hinweise für den Omega Kundensupport.
-    link: /lohn/fehlerbehebung
-    linkText: Fehler beheben
-  - icon: 🔄
-    title: Laufend aktualisiert
-    details: Änderungen an Funktionen und Prozessen können direkt mit den App-Releases dokumentiert werden.
+    linkText: Beispiel Text
+  - icon: 🧭
+    title: Personalzeiterfassung
+    details: Beispiel Text
+    link: /pze/
+    linkText: Beispiel Text
+  - icon: 🧑‍💼
+    title: Personalmanagement
+    details: Beispiel Text
+    link: /pm/
+    linkText: Beispiel Text
+  - icon: 📄
+    title: PDF Versand
+    details: Beispiel Text
+    link: /pdf_versand/
+    linktext: Beispiel Text
+  
 ---

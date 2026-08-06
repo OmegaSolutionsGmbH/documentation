@@ -5,6 +5,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue-jsx": "^5.1.6",
     "vitepress": "^2.0.0-alpha.19"
   }
 }

@@ -41,7 +41,7 @@ export default defineConfig({
         text: 'Module',
         items: [
           { text: 'Lohn & Gehalt', link: '/lohn/' },
-          { text: 'PDF Versand', link: '/pdf_versand'},
+          { text: 'PDF Versand', link: '/omega_pdf'},
 
         ]
       },
@@ -72,8 +72,20 @@ export default defineConfig({
               ]
             },
           ]
-        }
-        
+        },
+      ],
+      '/omega_pdf/': [
+        {
+          text: 'PDF Versand',
+          collapsed: false,
+          items: [
+            { text: 'Übersicht', link: '/omega_pdf/' },
+            { text: 'Installation', link: '/omega_pdf/installation' },
+            { text: 'Einrichtung', link: '/omega_pdf/einrichtung' },
+            { text: 'Erste Schritte', link: '/omega_pdf/erste-schritte' },
+            { text: 'Bekannte Fehler', link: '/omega_pdf/bekanntefehler' },
+          ]
+        },
       ],
     },
 
@@ -132,7 +144,11 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Omega Solutions Software GmbH – Microsoft Dynamics 365 Business Central Lösungen',
+      message: `
+        <a href="https://www.omegasol.at/impressum/">Impressum</a>
+        ·
+        <a href="https://www.omegasol.at/datenschutz/">Datenschutz</a>
+      `,
       copyright: `© ${new Date().getFullYear()} Omega Solutions Software GmbH`
     }
   }

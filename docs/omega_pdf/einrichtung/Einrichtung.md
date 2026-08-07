@@ -20,15 +20,7 @@ Hier legen Sie unter anderem fest:
 Richten Sie zuerst den E-Mail-Versand im Business-Central-Standard ein. Konfigurieren und aktivieren Sie Omega PDF anschließend.
 :::
 
-## Einrichtungsseite öffnen
 
-Öffnen Sie über die Suche in Business Central die Seite:
-
-```text
-Omega PDF Einrichtung
-```
-
-![Omega PDF Einrichtung](../public/Einrichtung.jpg)
 
 ## Allgemeine Einstellungen
 

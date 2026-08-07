@@ -75,6 +75,9 @@
   --omega-radius-sm: 8px;
   --omega-radius-md: 14px;
   --omega-radius-lg: 22px;
+
+  --omega-mode-code-block-bg:
+    color-mix(in srgb, var(--omega-palette-light) 95%, var(--omega-palette-brand));
 }
 
 /* -------------------------------------------------------------------------- */
@@ -118,6 +121,9 @@
   --omega-logo-background-opacity: 96%;
   --omega-logo-border-strength: 10%;
   --omega-logo-shadow-strength: 25%;
+
+  --omega-mode-code-block-bg:
+    color-mix(in srgb, var(--omega-palette-dark) 92%, var(--omega-palette-brand));
 }
 
 /* -------------------------------------------------------------------------- */
@@ -432,16 +438,12 @@
 
   --vp-home-hero-image-filter: blur(48px);
 
+
+
   /* Code */
   --vp-code-bg: var(--omega-bg-soft);
   --vp-code-color: var(--omega-brand);
-
-  --vp-code-block-bg:
-    color-mix(
-      in srgb,
-      var(--omega-palette-dark) 92%,
-      var(--omega-palette-brand)
-    );
+  --vp-code-block-bg: var(--omega-mode-code-block-bg);
 }
 
 /* Global                                                                     */

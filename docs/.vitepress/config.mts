@@ -76,14 +76,28 @@ export default defineConfig({
       ],
       '/omega_pdf/': [
         {
-          text: 'PDF Versand',
+          text: 'Omega PDF',
           collapsed: false,
           items: [
             { text: 'Übersicht', link: '/omega_pdf/' },
             { text: 'Installation', link: '/omega_pdf/installation' },
-            { text: 'Einrichtung', link: '/omega_pdf/einrichtung' },
-            { text: 'Erste Schritte', link: '/omega_pdf/erste-schritte' },
             { text: 'Bekannte Fehler', link: '/omega_pdf/bekanntefehler' },
+            { text: 'Einrichtung', link: '/omega_pdf/einrichtung', collapsed: true,
+              items: [
+                { text: 'Allgemeine Einrichtung', link: '/omega_pdf/einrichtung/einrichtung' },
+                { text: 'E-Mail Einrichtung', link: '/omega_pdf/einrichtung/emaileinrichtung' },
+                { text: 'Benutzereinrichtung', link: '/omega_pdf/einrichtung/benutzereinrichtung'},
+                { text: 'Quick Setup', link: '/omega_pdf/einrichtung/quicksetup' },
+              ]
+            },
+            { text: 'Berichtskonfiguration', link: '/omega_pdf/berichtskonfiguration'},          
+            { text: 'Mailvorlage', link: '/omega_pdf/mailvorlage', collapsed: true,
+              items: [
+                { text: 'Platzhalter', link: '/omega_pdf/mailvorlage/platzhalter' },
+              ]
+            },
+            { text: 'Berichte Verarbeiten', link: '/omega_pdf/berichteverarbeiten' },
+            { text: 'Unterstützte Berichte', link: '/omega_pdf/unterstützteBerichte' },
           ]
         },
       ],

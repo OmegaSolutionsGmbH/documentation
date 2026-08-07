@@ -35,7 +35,7 @@ features:
   - icon: 📄
     title: PDF Versand
     details: Beispiel Text
-    link: /pdf_versand/
+    link: /omega_pdf/
     linktext: Beispiel Text
   
 ---
